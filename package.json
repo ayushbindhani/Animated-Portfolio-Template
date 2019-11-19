@@ -11,8 +11,5 @@
     "url": "animationportfolio"
   },
   "author": "Shaun Stone",
-  "license": "MIT",
-  "dependencies": {
-    "sass": "^1.23.6"
-  }
+  "license": "MIT"
 }
