@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #232429;
+  font-family: arial;
+}
+
+nav {
+  margin: 75px 0 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  height: 50px;
+}
+nav ul {
+  display: flex;
+  color: #fff;
+  list-style-type: none;
+  margin: 0 100px 0 0;
+}
+nav ul li {
+  margin-left: 50px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: #ccc;
+}
+
+/*# sourceMappingURL=style.css.map */
