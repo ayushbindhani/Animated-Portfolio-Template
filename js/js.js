@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("#loading-screen")
-    .delay(1000)
+    .delay(800)
     .queue(function() {
       $(this)
         .addClass("loading-screen-remove")
@@ -11,7 +11,29 @@ $(document).ready(function() {
 });
 
 $(".hamburger").click(function() {
-  $(".link-list").addClass("link-list-animation");
   $(".link-list").fadeToggle();
+  $(".social").fadeToggle();
   console.log("clicked");
+});
+
+$(document).ready(function() {
+  function checkWidth() {
+    var windowSize = $(window).width();
+    var linkList = document.getElementsByClassName("link-list");
+    var social = document.getElementsByClassName("social");
+
+    if (windowSize >= 951) {
+      $(linkList).css({ display: "flex" });
+    } else {
+      $(linkList).css({ display: "none" });
+    }
+    if (windowSize >= 951) {
+      $(social).css({ display: "flex" });
+    } else {
+      $(social).css({ display: "none" });
+    }
+  }
+
+  checkWidth();
+  $(window).resize(checkWidth);
 });
