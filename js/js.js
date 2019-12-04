@@ -9,3 +9,9 @@ $(document).ready(function() {
       $(".welcome").css({ opacity: "0" });
     });
 });
+
+$(".hamburger").click(function() {
+  $(".link-list").addClass("link-list-animation");
+  $(".link-list").fadeToggle();
+  console.log("clicked");
+});
