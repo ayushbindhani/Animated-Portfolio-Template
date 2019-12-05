@@ -12,7 +12,6 @@ $(document).ready(function() {
 
 $(".hamburger").click(function() {
   $(".link-list").fadeToggle();
-  $(".social").fadeToggle();
   console.log("clicked");
 });
 
@@ -20,17 +19,11 @@ $(document).ready(function() {
   function checkWidth() {
     var windowSize = $(window).width();
     var linkList = document.getElementsByClassName("link-list");
-    var social = document.getElementsByClassName("social");
 
     if (windowSize >= 951) {
       $(linkList).css({ display: "flex" });
     } else {
       $(linkList).css({ display: "none" });
-    }
-    if (windowSize >= 951) {
-      $(social).css({ display: "flex" });
-    } else {
-      $(social).css({ display: "none" });
     }
   }
 
