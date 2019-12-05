@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("#loading-screen")
-    .delay(800)
+    .delay(1000)
     .queue(function() {
       $(this)
         .addClass("loading-screen-remove")
