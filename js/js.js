@@ -41,7 +41,6 @@ $(function() {
 
     requestJSON(requri, function(json) {
       var fullname = json.name;
-      var username = json.login;
       var aviurl = json.avatar_url;
       var profileurl = json.html_url;
       var location = json.location;

@@ -144,7 +144,7 @@ nav .logo {
   }
 
   .logo {
-    width: 88%;
+    width: 90%;
   }
 
   .link-list {
@@ -234,6 +234,7 @@ nav .logo {
   background: #6adb9d;
   margin: 30px 0 0 0;
   outline: none;
+  cursor: pointer;
 }
 
 .git-profile {
@@ -434,6 +435,10 @@ nav .logo {
 
   .logo {
     width: 88%;
+  }
+
+  .welcome {
+    font-size: 30px;
   }
 }
 
