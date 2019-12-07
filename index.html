@@ -4,44 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://kit.fontawesome.com/38f1c2a9a4.js" crossorigin="anonymous" SameSite="none"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script
+      src="https://kit.fontawesome.com/38f1c2a9a4.js"
+      crossorigin="anonymous"
+      SameSite="none"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
     <title>Portfolio</title>
   </head>
-<header>
   <body>
-    <div id="loading-screen"><div class="welcome">Welcome, Come on in!</div></div>
+    <!-- Animation / Loading Screen -->
+    <div id="loading-screen">
+      <div class="welcome">Welcome, Come on in!</div>
+    </div>
+    <!-- Navigation -->
     <nav>
-      <div class="logo"><img src="img/barcode.svg"> SHAUNSTONE</div>
-      
-    <ul class="link-list">
-      <li><a href="#"><div class="link">Projects</div></a></li>
-      <li><a href="#"><div class="link">Contact</div></a></li>
-      <li><a href="#"><div class="link">About</div></a></li>
-    </ul>
-    
-    
+      <div class="logo"><img src="img/barcode.svg" /> SHAUNSTONE</div>
+
+      <ul class="link-list">
+        <li>
+          <a href="#"><div class="link">Projects</div></a>
+        </li>
+        <li>
+          <a href="#"><div class="link">Contact</div></a>
+        </li>
+        <li>
+          <a href="#"><div class="link">About</div></a>
+        </li>
+      </ul>
     </nav>
+    <!-- Hamburger Menu for Repsonsive Design -->
     <div class="hamburger"><i class="fas fa-hamburger fa-2x"></i></div>
-  </header>
-  <section class="head-top">
-    <div class="social">
+    <!-- Social Media Icons -->
+    <section class="head-top">
+      <div class="social">
         <i class="fab fa-linkedin-in"></i>
         <i class="fab fa-github"></i>
         <i class="fab fa-instagram"></i>
-        
-    </div>
-    
+      </div>
+      <!-- Main Body -->
+      <section class="main-body">
+        <div class="main-wrapper">
+          <div class="main-body-info">
+            <h1>Front End Developer and Digital Designer</h1>
+            <hr />
 
-    
+            <p class="main-desc">
+              I create websites and design user experiences that are made for
+              humans. Please check out the projects that I have completed, and
+              the recent projects that I am currently working on!
+            </p>
+            <p class="git-desc">
+              My Projects are on Github, go ahead and take a look around.
+            </p>
+            <button class="git-hub-btn">Git Hub Profile</button>
+          </div>
 
-
-
+          <div id="git-hub-data"></div>
+        </div>
+      </section>
     </section>
 
-
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="js/js.js"></script>
   </body>
 </html>
