@@ -10,13 +10,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/project.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <!-- Animation / Loading Screen -->
-    <div id="loading-screen">
-      <div class="welcome">Welcome, Come on in!</div>
-    </div>
     <!-- Navigation -->
     <nav>
       <div class="logo">
@@ -24,6 +21,9 @@
       </div>
 
       <ul class="link-list">
+        <li>
+          <a href="index.html"><div class="link">Home</div></a>
+        </li>
         <li>
           <a href="projects.html"><div class="link">Projects</div></a>
         </li>
@@ -45,28 +45,39 @@
         <i class="fab fa-instagram"></i>
       </div>
       <!-- Main Body -->
-      <section class="main-body">
-        <div class="main-wrapper">
-          <div class="main-body-info">
-            <h1>Front End Developer and Digital Designer</h1>
-            <hr />
-
-            <p class="main-desc">
-              I create websites and design user experiences that are made for
-              humans. Please check out the projects that I have completed, and
-              the recent projects that I am currently working on!
-            </p>
-            <p class="git-desc">
-              My Projects are on Github, go ahead and take a look around.
-            </p>
-            <button class="git-hub-btn">Git Hub Profile</button>
-          </div>
-
-          <div id="git-hub-data"></div>
+      <main class="project-main-body-grid">
+        <h1>Current Projects</h1>
+        <hr />
+        <div class="grid">
+          <figure>
+            <div class="gradient">
+              <img src="img/projects/port-1-2.jpg" alt="img18" />
+            </div>
+            <figcaption>
+              <h2>Strong <span>Apollo</span></h2>
+              <p>Apollo's last game of pool was so strange.</p>
+              <a href="#">View more</a>
+            </figcaption>
+          </figure>
+          <figure class="effect-apollo">
+            <img src="img/projects/port-1-2.jpg" alt="img22" />
+            <figcaption>
+              <h2>Strong <span>Apollo</span></h2>
+              <p>Apollo's last game of pool was so strange.</p>
+              <a href="#">View more</a>
+            </figcaption>
+          </figure>
+          <figure class="effect-apollo">
+            <img src="img/projects/port-1-2.jpg" alt="img22" />
+            <figcaption>
+              <h2>Strong <span>Apollo</span></h2>
+              <p>Apollo's last game of pool was so strange.</p>
+              <a href="#">View more</a>
+            </figcaption>
+          </figure>
         </div>
-      </section>
+      </main>
     </div>
-
     <script src="js/js.js"></script>
   </body>
 </html>

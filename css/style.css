@@ -81,6 +81,7 @@ nav ul li a {
   text-transform: uppercase;
 }
 nav ul li:hover {
+  color: #fff;
   background: #2a573e;
 }
 nav .logo {
@@ -235,13 +236,14 @@ nav .logo {
   margin: 30px 0 0 0;
   outline: none;
   cursor: pointer;
+  border-radius: 50px;
 }
 
 .git-profile {
   display: flex;
   background: #121212;
   width: 80%;
-  height: 74%;
+  height: 56%;
   border: 1px solid #222;
   box-shadow: 10px 5px 5px #0e0e0e;
   animation: fade 2s;
@@ -352,7 +354,7 @@ nav .logo {
   }
 
   .git-profile {
-    height: 79%;
+    height: 59%;
   }
 }
 @media screen and (max-width: 1800px) {

@@ -1,0 +1,40 @@
+.project-main-body-grid {
+  width: 89%;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: #ffffff;
+}
+.project-main-body-grid hr {
+  background-color: #6adb9d;
+  border: 0;
+  height: 2px;
+  margin: 0 0 15px 0;
+  width: 20.5%;
+}
+.project-main-body-grid h1 {
+  margin: 0 0 0 0;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-rows: repeat(3, 600px);
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+  background: #222;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 10px 5px 5px #0e0e0e;
+}
+.grid figure {
+  padding: 10px;
+}
+.grid figure img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=project.css.map */

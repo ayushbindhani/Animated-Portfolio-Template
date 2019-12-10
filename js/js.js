@@ -11,7 +11,7 @@ $(document).ready(function() {
 });
 
 $(".hamburger").click(function() {
-  $(".link-list").fadeToggle();
+  $(".link-list").slideToggle();
   console.log("clicked");
 });
 

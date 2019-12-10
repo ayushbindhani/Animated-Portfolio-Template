@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "sass": "sass --watch css/style.sass css/style.css",
+    "prosass": "sass --watch css/project.sass css/project.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
