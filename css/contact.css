@@ -1,0 +1,168 @@
+.uppercase {
+  text-transform: uppercase;
+  color: #6adb9d;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  min-height: 100%;
+  width: 90%;
+}
+.contact-wrapper hr {
+  width: 208px;
+  border: 0;
+  height: 2px;
+  background: #6adb9d;
+  margin: 0 0 20px;
+}
+.contact-wrapper h1 {
+  text-transform: uppercase;
+}
+
+.contact-form {
+  position: absolute;
+  top: 10%;
+  left: 12%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  min-height: 80%;
+  padding: 10px;
+  background: #222222;
+  border: 1px solid #333;
+  border-radius: 15px;
+}
+.contact-form form {
+  width: 100%;
+  padding: 40px;
+}
+.contact-form form .form-label {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  color: #6adb9d;
+  font-size: 14px;
+  padding: 7px;
+}
+
+input {
+  height: 20px;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  background: #252525;
+  border: 1px solid #333;
+  color: #cccccc;
+  font-size: 15px;
+  font-face: "Poppins";
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+  width: 104%;
+  margin: 5px;
+  border: none;
+  background: #252525;
+  font-family: "Poppins";
+  color: #cccc;
+  border: 1px solid #333;
+}
+
+::-webkit-input-placeholder {
+  color: #444;
+  font-family: "Poppins";
+}
+
+::-moz-placeholder {
+  color: #444;
+  font-family: "Poppins";
+}
+
+:-ms-input-placeholder {
+  color: #444;
+  font-family: "Poppins";
+}
+
+:-moz-placeholder {
+  color: #444;
+  font-family: "Poppins";
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #252525 inset;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #ccc;
+  font-family: "Poppins";
+}
+
+.how-help {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 250px;
+}
+.how-help .service {
+  font-size: 30px;
+}
+.how-help p {
+  font-size: 18px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-wrapper {
+    min-height: 100%;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    height: 90%;
+    top: 2%;
+  }
+  .contact-form input {
+    width: 90%;
+  }
+  .contact-form textarea {
+    width: 93%;
+  }
+
+  .how-help {
+    align-items: center;
+    padding: 0;
+    width: 80%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 950px) {
+  .contact-form {
+    position: static;
+    margin-top: 50px;
+    margin-left: 25px;
+    width: 90%;
+  }
+
+  .contact-wrapper {
+    position: static;
+    min-height: 100%;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

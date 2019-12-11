@@ -4,17 +4,25 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   background: #161616;
-  height: 100vh;
+  min-height: 100%;
   font-family: Poppins;
+  display: flex;
+  flex-direction: column;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 #loading-screen {
@@ -191,7 +199,7 @@ nav .logo {
   color: #fff;
 }
 .main-body hr {
-  width: 93%;
+  width: 800px;
   background: #6adb9d;
   border: 0;
   height: 2px;
@@ -204,7 +212,8 @@ nav .logo {
   text-transform: none;
   font-weight: 300;
   color: #a5a4a4;
-  width: 90%;
+  width: 100%;
+  text-align: justify;
 }
 
 .main-wrapper {
@@ -212,45 +221,10 @@ nav .logo {
 }
 
 .main-body-info {
-  width: 100%;
+  width: 50%;
 }
-
-.git-desc {
-  margin-top: 1em;
-  font-size: 20px;
-  text-transform: none;
-  font-weight: 300;
-  color: #a5a4a4;
-}
-
-.git-hub-btn {
-  font-family: "Poppins";
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #000000;
-  font-size: 15px;
-  border: 0;
-  width: 300px;
-  padding: 10px;
-  background: #6adb9d;
-  margin: 30px 0 0 0;
-  outline: none;
-  cursor: pointer;
-  border-radius: 50px;
-}
-
-.git-profile {
-  display: flex;
-  background: #121212;
-  width: 80%;
-  height: 56%;
-  border: 1px solid #222;
-  box-shadow: 10px 5px 5px #0e0e0e;
-  animation: fade 2s;
-}
-.git-profile a {
-  text-decoration: none;
-  color: #fff;
+.main-body-info h1 {
+  font-size: 35px;
 }
 
 .profile-picture {
@@ -278,110 +252,50 @@ nav .logo {
   padding: 2px 0 0 10px;
 }
 
-.git-hub-profile {
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: bold;
-}
-.git-hub-profile a {
-  color: #6adb9d;
-}
-.git-hub-profile a:hover {
-  color: #367452;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-#git-hub-data {
-  color: #fff;
-  width: 100%;
-}
-
-.profile-hub {
-  list-style: none;
-  font-size: 13px;
+footer {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  margin-top: auto;
+  padding: 10px;
 }
-.profile-hub li:first-child {
-  margin-left: 10px;
-  background: #6adb9d;
-  padding: 5px;
+footer .copywrite {
+  color: #888888;
+  font-size: 13px;
 }
-.profile-hub li {
-  margin-right: 10px;
-  margin-top: 10px;
-  background: #6adb9d;
-  padding: 5px;
-  border-radius: 10px;
+footer .respon-social {
+  display: none;
+  color: #888888;
 }
-.profile-hub li a {
-  text-decoration: none;
-  color: #000000;
-  text-transform: none;
-}
-.profile-hub li:hover {
-  background: #367452;
-  cursor: pointer;
+footer .respon-social i {
+  margin: 0 20px 0;
 }
 
-.github-pic img {
-  height: 100px;
-}
-
-.repos {
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-
-@media screen and (max-width: 1850px) {
-  .info li:first-child a {
-    font-size: 25px;
-  }
-
-  .main-desc {
-    width: 70%;
-    font-size: 17px;
-  }
-
-  .git-desc {
-    font-size: 17px;
-  }
-
-  .git-profile {
-    height: 59%;
-  }
-}
 @media screen and (max-width: 1800px) {
   .main-wrapper {
     flex-direction: column;
   }
 
-  .profile-picture {
-    height: 201px;
-  }
-
-  .git-profile {
-    margin: 50px 0 0 0;
-    width: 60%;
-  }
-
-  .main-body hr {
+  .main-body-info {
     width: 50%;
   }
-}
-@media screen and (max-width: 950px) {
   .main-body-info h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
-
-  .main-body hr {
-    width: 81%;
+  .main-body-info hr {
+    width: 575px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .main-body-info {
+    width: 55%;
+  }
+  .main-body-info h1 {
+    font-size: 18px;
+  }
+  .main-body-info hr {
+    width: 415px;
   }
 
   .main-desc {
@@ -389,41 +303,34 @@ nav .logo {
     font-size: 17px;
   }
 }
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 950px) {
+  .main-body-info {
+    width: 80%;
+  }
+
+  footer .respon-social {
+    display: flex;
+  }
+}
+@media screen and (max-width: 829px) {
+  .main-body-info {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 790px) {
+  .main-body-info {
+    width: 100%;
+  }
   .main-body-info h1 {
-    font-size: 25px;
+    font-size: 17px;
   }
-
-  .git-profile {
-    flex-direction: column;
-    width: 200px;
-    padding: 0 0 10px 0;
-  }
-
-  .info ul li:first-child {
-    padding: 0;
-  }
-  .info ul li {
-    padding: 0;
-  }
-
-  .profile-hub {
-    flex-direction: column;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-  }
-  .profile-hub li:first-child {
-    margin: 0;
-  }
-  .profile-hub li {
-    margin-left: 0;
-    margin-right: 0;
+  .main-body-info hr {
+    width: 390px;
   }
 }
 @media screen and (max-width: 650px) {
   .main-body-info h1 {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -432,7 +339,7 @@ nav .logo {
   }
 
   .main-body-info h1 {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .logo {

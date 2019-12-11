@@ -1,0 +1,163 @@
+.about-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.profile-picture {
+  width: 40%;
+  text-align: center;
+}
+.profile-picture img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.profile-info {
+  width: 40%;
+  min-height: 100%;
+  color: #858585;
+}
+.profile-info .name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  color: #6adb9d;
+  font-size: 40px;
+  width: 100%;
+}
+.profile-info .tag {
+  font-size: 20px;
+  color: #bdbdbd;
+}
+.profile-info p {
+  padding: 10px;
+}
+
+.tech-names {
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.tech-name {
+  font-size: 20px;
+}
+
+.tech {
+  display: inline-block;
+  width: 75px;
+  padding: 5px;
+  background-image: linear-gradient(#6adb9d, #6e6e6e);
+  margin: 5px;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tags {
+  height: 100%;
+  margin: 0 0 20px 0;
+}
+
+.git-hub {
+  width: 50%;
+}
+.git-hub a {
+  text-decoration: none;
+}
+
+.github-btn {
+  border: 1px solid #6adb9d;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  color: #bdbdbd;
+  font-size: 15px;
+  transition: 0.2s ease-in-out;
+}
+
+.github-btn:hover {
+  background: #2a573e;
+  color: #000;
+}
+
+@media screen and (max-width: 1780px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .tech-names {
+    height: 200px;
+  }
+
+  .profile-picture {
+    width: 60%;
+  }
+
+  .profile-info {
+    width: 54%;
+  }
+
+  .name {
+    width: 100%;
+  }
+
+  .github-btn {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .profile-picture {
+    width: 70%;
+  }
+
+  .profile-info {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 864px) {
+  .profile-info .name {
+    font-size: 30px;
+  }
+
+  .github-btn {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 732px) {
+  .name .git-hub .github-btn {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .profile-info .name {
+    font-size: 20px;
+  }
+  .profile-info .name .git-hub .github-btn {
+    font-size: 12px;
+  }
+
+  .about-main {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .profile-picture {
+    width: 100%;
+  }
+
+  .profile-info {
+    width: 90%;
+  }
+  .profile-info .name .git-hub .github-btn {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

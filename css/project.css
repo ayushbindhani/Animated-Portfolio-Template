@@ -1,40 +1,93 @@
-.project-main-body-grid {
-  width: 89%;
+.project-wrapper {
   position: absolute;
   top: 20%;
-  left: 5%;
+  left: 2%;
+  width: 92%;
+}
+
+.project-main-body-grid {
+  min-height: 100%;
+  width: 100%;
   color: #ffffff;
 }
 .project-main-body-grid hr {
   background-color: #6adb9d;
   border: 0;
   height: 2px;
-  margin: 0 0 15px 0;
-  width: 20.5%;
+  margin: 0 0 15px 10px;
+  width: 320px;
 }
 .project-main-body-grid h1 {
-  margin: 0 0 0 0;
+  margin: 0 0 0 10px;
   text-transform: uppercase;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  grid-template-rows: repeat(3, 600px);
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(3, 225px);
+  grid-gap: 0.8rem;
   grid-auto-flow: dense;
-  background: #222;
   padding: 10px;
   width: 100%;
-  box-shadow: 10px 5px 5px #0e0e0e;
-}
-.grid figure {
-  padding: 10px;
+  min-height: 100%;
 }
 .grid figure img {
   width: 100%;
   height: auto;
-  opacity: 0.5;
+}
+.grid figure a {
+  text-decoration: none;
+  color: #ddd;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.grid figure a:hover {
+  color: #6adb9d;
+  transition: 0.2s ease-in-out;
+}
+
+figcaption {
+  padding: 10px;
+}
+figcaption .grid-hr {
+  width: 250px;
+  margin: 0 0 10px 0;
+}
+figcaption p {
+  font-size: 14px;
+  text-align: justify;
+  color: #888888;
+}
+
+.project-link {
+  margin: 20px 0;
+}
+.project-link i {
+  margin: 0 10px 0;
+  color: #6adb9d;
+}
+
+@media screen and (max-width: 1390px) {
+  .social {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .grid {
+    grid-template-rows: repeat(2, 600px);
+  }
+}
+@media screen and (max-width: 950px) {
+  .project-wrapper {
+    position: static;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 686px) {
+  .grid {
+    grid-template-rows: repeat(3, 690px);
+  }
 }
 
 /*# sourceMappingURL=project.css.map */

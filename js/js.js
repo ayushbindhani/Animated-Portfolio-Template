@@ -12,7 +12,6 @@ $(document).ready(function() {
 
 $(".hamburger").click(function() {
   $(".link-list").slideToggle();
-  console.log("clicked");
 });
 
 $(document).ready(function() {
