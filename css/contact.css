@@ -62,7 +62,7 @@ input {
   border: 1px solid #333;
   color: #cccccc;
   font-size: 15px;
-  font-face: "Poppins";
+  font-family: "Poppins";
 }
 
 textarea {
@@ -125,6 +125,16 @@ input:-webkit-autofill {
 .how-help p {
   font-size: 18px;
   padding: 10px;
+}
+
+button {
+  margin: 15px 5px;
+  font-family: "Poppins";
+  border: 0;
+  padding: 10px;
+  background: #6adb9d;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1024px) {

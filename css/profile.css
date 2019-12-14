@@ -1,0 +1,47 @@
+#git-hub-data {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 150px 0;
+}
+#git-hub-data img {
+  width: 400px;
+}
+
+.git-hub-profile a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #6adb9d;
+}
+.git-hub-profile a:hover {
+  color: #2a573e;
+}
+
+.profile-info ul li {
+  font-size: 15px;
+}
+
+.profile-hub {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.profile-hub li {
+  margin: 20px 0;
+}
+.profile-hub li a {
+  color: #000;
+  font-size: 15px;
+  text-decoration: none;
+  background: #6adb9d;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=profile.css.map */

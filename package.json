@@ -8,6 +8,8 @@
     "prosass": "sass --watch css/project.sass css/project.css",
     "consass": "sass --watch css/contact.sass css/contact.css",
     "aboutsass": "sass --watch css/about.sass css/about.css",
+    "viewsass": "sass --watch css/project_view.sass css/project_view.css",
+    "gitsass": "sass --watch css/profile.sass css/profile.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

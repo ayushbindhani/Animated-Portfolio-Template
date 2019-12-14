@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Portfolio Website",
+    "img": "img/projects/large-port-1.jpg",
+    "inrto": " This project started as a portfolio website, and ended in something that was never used. It was a deep dive into using Jquery as a framework to create something that used AJAX to display projects for the user, if he or she wanted to view them. The simple design was pleasing, however, it was too bright for most user's eyes and needed some darkening up.",
+    "caption": " this project takes advantage of AJAX, alowing the user to click one link to view work that is currently in proccess from the developer. Nice, and clean social media buttons round out the middle of the page and it has a very nice welcome message- letting the viewer know what the developer specializes in. ",
+    "tech": " HTML5, CSS3, Jquery, JavaScript"
+  }
+]
