@@ -97,7 +97,7 @@
   }
 
   .profile-picture {
-    width: 60%;
+    width: 20%;
   }
 
   .profile-info {
@@ -114,7 +114,7 @@
 }
 @media screen and (max-width: 1280px) {
   .profile-picture {
-    width: 70%;
+    width: 30%;
   }
 
   .profile-info {
