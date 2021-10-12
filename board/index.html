@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Drawing</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<img src="https://media.discordapp.net/attachments/894771270904852511/897510099315195924/image_1__1_-removebg-preview.png"  class="center";
+>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<style>
+    
+body::-webkit-scrollbar {
+  width: 10px; 
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #6b6b6b;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px #6b6b6b;  /* creates padding around scroll thumb */
+}
+
+    </style>
+        <button class="animated hover-button" id="start-drawing"><span>Activate Whiteboard</span></button>
+        <div id="drawing-cover"></div>
+        <div id="drawing-layer"></div><div id="drawing-box">
+    <div class="tools">
+        <button data-tool="freeHand" data-current="true"><span><i class="fal fa-pencil-alt"></i></span></button>
+        <button data-tool="arrow" ><span><i class="fal fa-arrow-up"></i></span></button>
+        <button data-tool="eraser" ><span><i class="fal fa-eraser"></i></span></button>
+    </div>
+    <div class="colors">
+        <div data-color="white" data-rColor="white" data-current="true"></div>
+        <div data-color="black" data-rColor="#544141"></div>
+        <div data-color="red" data-rColor="#d83030"></div>
+        <div data-color="green" data-rColor="#30d97d"></div>
+        <div data-color="orange" data-rColor="#ff9000"></div>
+        <div data-color="yellow" data-rColor="#f3f326"></div>
+    </div>
+    <div class="close">
+        <i class="fal fa-times"></i>
+    </div>
+</div>
+
+        <script src="https://kit.fontawesome.com/48764efa36.js" crossorigin="anonymous"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+body { background: rgb(10 13 37); }
+    #drawing-box {
+        background: linear-gradient(360deg, #ebf3fd, white);
+        position: fixed;
+        left: 2rem;
+        padding: 1rem;
+        display: flex;
+        box-shadow: 0 2px 20px #000000c4;
+        z-index: 9999999;
+        transition: all 0.2s ease-out;
+        transform: scale(0.5);
+        bottom: -4rem;
+        border-radius: 100px;
+    }
+
+    [data-drawing="true"] #drawing-box {
+        bottom: 3rem;
+        transform: scale(1);
+    }
+
+    #drawing-cover {
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        transition: all 0.3s ease-out;
+        width: 100%;
+        height: 100%;
+    }
+    [data-drawing="true"] #drawing-cover {
+        background: rgba(0,0,0,0.5);
+        pointer-events: all;
+    }
+
+    #drawing-box .tools i, #drawing-box .close i {
+        color: black;
+        padding: 0;
+        border-bottom: 2px solid transparent;
+        font-size: 1.25rem;
+        padding: 0 0 0.25rem 0;
+    }
+    #drawing-box .close {
+        border-left: 1px solid #00000030;
+        padding: 0 0 0 1rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    #drawing-box .close i {
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+    #drawing-box .tools {
+        display: flex;
+        border-right: 1px solid #00000030;
+        margin: 0 1rem 0 0;
+    }
+
+    #drawing-box .tools > button {
+        width: 32px;
+        margin: 0 1rem 0 0;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+        height: 32px;
+    }
+
+    #drawing-box .tools > button span {
+        background: transparent;
+        filter: none !important;
+        padding: 0;
+        border-radius: 4px;
+    }
+
+    #drawing-box .colors {
+        display: flex;
+        align-items: center;
+    }
+    #drawing-box .colors > div {
+        width: 24px;
+        height: 24px;
+        border-radius: 100px;
+        transition: all 0.1s ease-out;
+        cursor: pointer;
+        margin: 0 1rem 0 0;
+        transform: scale(1);
+        box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+    }
+    #drawing-box .colors > div:hover {
+        transform: scale(1.05);
+    }
+    #drawing-box .colors > div[data-current="true"]:after {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        border-radius: 100px;
+        border: 2px solid #0646ff;
+    }
+#drawing-box i { 
+      display: block;
+}
+    #drawing-box [data-tool][data-current="true"] i {
+        color: #0646ff;
+        cursor: pointer;
+        border-bottom: 2px solid #0646ff !important;
+    }
+
+    #drawing-box [data-tool]:not([data-current="true"]):hover i {
+        color: rgba(0,0,0,0.5);
+    }
+
+    #drawing-layer svg {
+        display: block !important;
+        fill: transparent;
+        clip-path: inset(-9999px -9999px -99999px -99999px);
+        overflow: visible;
+        z-index: 999999999;
+    }
+    #drawing-layer {
+        overflow: visible;
+        pointer-events: none;
+    }
+
+    [data-drawing="true"] #drawing-layer {
+        pointer-events: all;
+    }
+    #drawing-layer .free-hand, #drawing-layer .arrow {
+        overflow: visible;
+        position: absolute;
+    }
+
+    #drawing-layer .free-hand.static, #drawing-layer .arrow.static {
+        opacity: 0;
+    }
+
+    #drawing-layer svg path {
+        stroke-linecap: round;
+    }
+
+    #drawing-layer svg path, #drawing-layer svg line {
+        cursor: pointer;
+	    pointer-events: visiblepainted;
+        position: absolute;
+    }
+    #drawing-box .colors [data-color="black"] { background: #544141; }
+    #drawing-box .colors [data-color="red"] { background: #d83030; }
+    #drawing-box .colors [data-color="green"] { background: #30d97d; }
+    #drawing-box .colors [data-color="orange"] { background: #ff9000; }
+    #drawing-box .colors [data-color="yellow"] { background: #f3f326; }
+
+    @media screen and (max-width: 700px) {
+        body[data-drawing="true"] {
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        #drawing-box .colors [data-color="green"], 
+        #drawing-box .colors [data-color="orange"],
+        #drawing-box .colors [data-color="yellow"],
+        #drawing-box .colors [data-color="white"] {
+            display: none;
+        }
+    }
+
+
+    button {
+        background: linear-gradient(180deg, #ff7147, #e0417f);
+        font-size: 1.5rem;
+        color: white;
+        padding: 1rem 2rem;
+        line-height: 2rem;
+      cursor: pointer;
+        will-change: transform, filter;
+        float: none;
+        transition: all 0.15s ease-out;
+        height: auto;
+        border-radius: 100px;
+      border: none;
+        overflow: hidden;
+        display: block;
+      margin: 2rem;
+        display: block;
+        transform: rotateX(0deg) rotateY(0deg) scale(1);
+        filter: drop-shadow(0 15px 15px rgba(0,0,0,0.3));
+        font-weight: 500;
+        perspective-origin: 0 0;
+        letter-spacing: 0;
+    }
+
+.link {
+  display: block;
+  color: rgba(255,255,255,0.7);
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  line-height: 2rem;
+  margin: 0 0 0 3rem;
+}
+
+.link:hover {
+  color: rgba(255,255,255,1);
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 50px;
+}
